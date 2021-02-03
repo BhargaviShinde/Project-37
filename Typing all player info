@@ -1,0 +1,44 @@
+var P1N = database.ref('players/player1');
+          P1N.on("value",function(data){
+            Playername = data.val();
+          })
+
+          var P1O = database.ref('players/player1/option');
+          P1O.on("value",function(data){
+            option = data.val();
+          })
+          text(P1N + " : " + P1O);
+
+          var P2N = database.ref('players/player2');
+          P2N.on("value",function(data){
+            Playername = data.val();
+          })
+
+          var P2O = database.ref('players/player2');
+          P2O.on("value",function(data){
+            option = data.val();
+          })
+          text(P2N + " : " + P2O);
+
+          var P3N = database.ref('players/player3');
+          P3N.on("value",function(data){
+            Playername = data.val();
+          })
+
+          var P3O = database.ref('players/player3');
+          P3O.on("value",function(data){
+            option = data.val();
+          })
+          text(P3N + " : " + P3O);
+
+          var P4N = database.ref('players/player4');
+          P4N.on("value",function(data){
+            Playername = data.val();
+          })
+
+          var P4O = database.ref('players/player4');
+          P4O.on("value",function(data){
+            option = data.val();
+          })
+          text(P4N + " : " + P4O);
+        
